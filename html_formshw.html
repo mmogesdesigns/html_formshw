@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action="/submit" method="get">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter email address..." required>
+        <button type="submit">Submit</button>
+   
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" placeholder="Enter the quantity:" min="0" max="100" step="5">
+
+        <label for="date">Date:</label>
+        <input type="date" name="date" placeholder="Please select a date:">
+
+        <label for="rating">Rating:</label>
+        <input type="range" name="rating" min="1" max="10" placeholder="Give a rating (1-10)">
+   
+    
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <form action="/submit" method="get">
+
+        <label for="levels">Expertise Level </label>
+          <input type="radio" id="beginner" name="expertise-level" value="beginner" aria-label="Beginner">
+    <label for="beginner">Beginner</label><br>
+    
+    <input type="radio" id="intermediate" name="expertise-level" value="intermediate" aria-label="Intermediate">
+    <label for="intermediate">Intermediate</label><br>
+    
+    <input type="radio" id="advanced" name="expertise-level" value="advanced" aria-label="Advanced">
+    <label for="advanced">Advanced</label><br><br>
+  
+  <label>Development Platforms:</label><br>
+  <input type="checkbox" id="web" name="platform" value="web" aria-label="Web Development">
+    <label for="web">Web</label><br>
+    
+    <input type="checkbox" id="mobile" name="platform" value="mobile" aria-label="Mobile Development">
+    <label for="mobile">Mobile</label><br>
+    
+    <input type="checkbox" id="desktop" name="platform" value="desktop" aria-label="Desktop Development">
+    <label for="desktop">Desktop</label><br><br>
+
+    </form>
+</body>
+</html>
